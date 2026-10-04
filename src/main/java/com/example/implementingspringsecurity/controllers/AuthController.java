@@ -24,7 +24,7 @@ public class AuthController {
     public ResponseEntity<String> register(@RequestBody UserRequestDto userRequestDto)
     {
         String message =  authService.registerUser(userRequestDto);
-        System.out.println("Added for git");
+        System.out.println("Added for git");//vikash
         return new ResponseEntity<>(message,HttpStatus.CREATED);
     }
 
